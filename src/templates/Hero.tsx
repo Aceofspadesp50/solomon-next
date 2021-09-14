@@ -4,32 +4,30 @@ import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
-import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-import { Logo } from './Logo';
 
-const Hero = () => (
-  <Background color="bg-gray-100" className="bg-hero-pattern h-screen bg-cover bg-no-repeat">
-    <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
-          <Button>Connect</Button>
-        </li>
-      </NavbarTwoColumns>
-    </Section>
-
-    <Section yPadding="pt-20 pb-32">
+const Hero = () => (  <Background
+    color="bg-gray-100"
+    className="bg-hero-pattern h-screen bg-cover bg-no-repeat text-shadow-link"
+    id="hero"
+  >
+    <Section yPadding="pt-48 pb-32">
+      <div className="w-full text-center">
+        <img
+          src="/assets/images/logo_Font.png"
+          alt="hero_image"
+          width="50%"
+          className="m-auto"
+        />
+      </div>
       <HeroOneButton
-        title={
-          <>
-            {'Purchase the next generation NFT\n'}
-            <span className="text-primary-500">Souless Solomon</span>
-          </>
-        }
-        description="The easiest way to build a React landing page in seconds."
+        title={<></>}
+        description="Sell your Soul. One NFT At A Time"
         button={
           <Link href="http://localhost:3000">
-            <a>
-              <Button xl>Click to connect your wallet</Button>
+            <a className="tracking-widest text-white">
+              <Button texture xl tb_padding>
+                Summon My Solomon
+              </Button>
             </a>
           </Link>
         }

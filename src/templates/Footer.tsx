@@ -7,7 +7,7 @@ import { Logo } from './Logo';
 
 const Footer = () => (
   <Background color="bg-gray-100">
-    <Section>
+    <Section yPadding="py-8">
       <CenteredFooter
         logo={<Logo />}
         iconList={
@@ -70,7 +70,7 @@ const Footer = () => (
           </>
         }
       >
-        <li>
+        {/* <li>
           <Link href="/">
             <a>Home</a>
           </Link>
@@ -86,10 +86,10 @@ const Footer = () => (
           </Link>
         </li>
         <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
+          <Link href="https://github.com">
             <a>GitHub</a>
           </Link>
-        </li>
+        </li> */}
       </CenteredFooter>
     </Section>
   </Background>

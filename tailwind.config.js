@@ -15,6 +15,44 @@ module.exports = {
       '5xl': '3rem',
       '6xl': '4rem',
     },
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      'full': '100% 100%',
+    },
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      'primary': '#3490dc',
+      'secondary': '#ffed4a',
+      'danger': '#e3342f',
+      'navbar': '#3b566f'
+    }),
+    textShadow: {
+      'default': '0 2px 0 #000',
+      'md': '0 2px 2px #000',
+      'h2': '0 0 3px #FF0000, 0 0 5px #0000FF',
+      'h1': '0 0 3px rgba(0, 0, 0, .8), 0 0 5px rgba(0, 0, 0, .9)',
+      'link': '2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px 2px 0 #000, 2px -1px 0 #000, -2px 2px 8px #000',
+    },
+    fontFamily: {
+      'sans': ['ui-sans-serif', 'system-ui'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+      'body': ['"Noyh Geometric Slim Black"'],
+    },
+    rotate: {
+      '-180': '-180deg',
+      '-90': '-90deg',
+      '-45': '-45deg',
+      '0': '0',
+      '45': '45deg',
+      '90': '90deg',
+      '135': '135deg',
+      '180': '180deg',
+      '270': '270deg',
+      'project-rotate': '12deg'
+    },
     extend: {
       colors: {
         primary: {
@@ -40,15 +78,26 @@ module.exports = {
           900: '#1a202c',
         },
       },
+      margin: {
+        '10p': '10%',
+      },
       lineHeight: {
         hero: '4.5rem',
       },
       backgroundImage: {
         'hero-pattern': "url('/assets/images/cartoon4.jpg')",
+        'frame-image': "url('/assets/images/image-frame.jpg')",
+        'button-image': "url('/assets/images/button_alt.png')",
+        'project-image': "url('/assets/images/projects_wallpaper.jpg')",
+        'story-image': "url('/assets/images/story_wallpaper.png')",
+        'roadmap-image': "url('/assets/images/roadmap_wallpaper.png')",
         // 'footer-texture': "url('/img/footer-texture.png')",
       }
     },
   },
   variants: {},
-  plugins: [],
-};
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
+}
+
