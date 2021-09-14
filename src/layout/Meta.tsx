@@ -24,26 +24,26 @@ const Meta = (props: IMetaProps) => {
         />
         <link
           rel="apple-touch-icon"
-          href={`${router.basePath}/logo.png`}
+          href={`${router.basePath}/logo_160x160.png`}
           key="apple"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={`${router.basePath}/logo.png`}
+          href={`${router.basePath}/logo_160x160.png`}
           key="icon32"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={`${router.basePath}/logo.png`}
+          href={`${router.basePath}/logo_160x160.png`}
           key="icon16"
         />
         <link
           rel="icon"
-          href={`${router.basePath}/logo.png`}
+          href={`${router.basePath}/logo_160x160.png`}
           key="favicon"
         />
       </Head>
