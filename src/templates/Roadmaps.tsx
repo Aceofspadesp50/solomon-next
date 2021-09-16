@@ -19,12 +19,12 @@ const Roadmaps = () => {
         <div className="text-2xl inline-block relative">
           {steps.map(step => 
             <div className="text-center px-6 w-full lg:w-1/3 mt-4 lg:mt-8 float-left" key={step.title}>
-              <div className="bg-gray-300 rounded-lg flex items-center justify-center border border-gray-200">
-                <div className="w-1/3 bg-transparent h-16 lg:h-20 flex items-center justify-center icon-step">
+              <div className="bg-gray-600 rounded-lg flex items-center justify-center border border-gray-100">
+                <div className="w-1/3 bg-transparent h-20 lg:h-20 flex items-center justify-center icon-step text-gray-100">
                   {step.title}
                 </div>
-                <div className="w-2/3 bg-gray-200 h-16 lg:h-24 flex flex-col items-center justify-center px-1 rounded-r-lg body-step">
-                  <p className="text-sm text-gray-600">
+                <div className="w-2/3 bg-gray-200 h-20 lg:h-24 flex flex-col items-center justify-center px-1 rounded-r-lg body-step">
+                  <p className="text-lg text-gray-800">
                     {step.detail}
                   </p>
                 </div>
