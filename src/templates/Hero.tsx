@@ -26,7 +26,7 @@ const Hero = () => (  <Background
           <Link href="http://localhost:3000">
             <a className="tracking-widest text-white">
               <Button texture xl tb_padding>
-                Summon My Solomon
+                Join The Discord
               </Button>
             </a>
           </Link>
