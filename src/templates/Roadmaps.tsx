@@ -16,7 +16,7 @@ const Roadmaps = () => {
       id="roadmap"
     >
       <Section title="SOLOMON'S JOURNEY" description="" yPadding="py-32">
-        <div className="text-2xl inline-block relative">
+        <div className="text-2xl inline-block relative mt-0 lg:mt-20">
           {steps.map(step => 
             <div className="text-center px-6 w-full lg:w-1/3 mt-4 lg:mt-8 float-left" key={step.title}>
               <div className="bg-gray-600 rounded-lg flex items-center justify-center border border-gray-100">

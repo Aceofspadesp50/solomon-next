@@ -11,11 +11,12 @@ type IVerticalFeatureRowProps = {
   rotate?: boolean;
   shadow?: string;
   imageMT?: string;
+  MT?: string;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   const verticalFeatureClass = className(
-    'mt-24',
+    props.MT? props.MT: 'mt-24',
     'flex',
     'flex-wrap',
     'items-center',

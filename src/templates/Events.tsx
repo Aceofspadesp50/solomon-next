@@ -15,6 +15,7 @@ const Events = () => (
         image="/assets/images/event_right.png"
         imageAlt="Second feature alt text"
         rotate
+        MT="mt-24 lg:mt-32"
       />
     </Section>
   </Background>

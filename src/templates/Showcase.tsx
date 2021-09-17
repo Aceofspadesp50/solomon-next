@@ -17,6 +17,7 @@ const Showcase = () => (
         color="white"
         rotate
         shadow="shadow-image"
+        MT="mt-24 lg:mt-36"
       />
     </Section>
   </Background>
