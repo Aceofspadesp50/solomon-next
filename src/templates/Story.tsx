@@ -17,6 +17,7 @@ const Story = () => (
         reverse
         color="white"
         imageMT="pt-0"
+        MT="mt-24 lg:mt-20"
       />
     </Section>
   </Background>
