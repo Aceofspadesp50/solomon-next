@@ -16,6 +16,7 @@ const Showcase = () => (
         imageAlt="Second feature alt text"
         color="white"
         rotate
+        shadow="shadow-image"
       />
     </Section>
   </Background>

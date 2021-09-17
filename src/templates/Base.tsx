@@ -9,6 +9,7 @@ import { Roadmaps } from './Roadmaps';
 // import { VerticalFeatures } from './VerticalFeatures';
 import { Showcase } from './Showcase';
 import { Story } from './Story';
+import { Events } from './Events';
 import { Twitter, Discord } from './SocialIcons';
 // import Parallax from 'react-springy-parallax';
 // import Parallax from '../components/parallax';
@@ -84,6 +85,11 @@ const Base = () => {
                     <li>
                       <Link href="/#story">
                         <a>STORY</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/#event">
+                        <a>EVENT</a>
                       </Link>
                     </li>
                     <li>
@@ -183,6 +189,13 @@ const Base = () => {
                   </a>
 
                   <a
+                    href="/#event"
+                    className="text-gray-300 hover:bg-gray-400 hover:text-white block px-3 py-2 rounded-md text-xl font-medium"
+                  >
+                    EVENT
+                  </a>
+
+                  <a
                     href="/#roadmap"
                     className="text-gray-300 hover:bg-gray-400 hover:text-white block px-3 py-2 rounded-md text-xl font-medium"
                   >
@@ -214,6 +227,7 @@ const Base = () => {
     <Hero />
     <Showcase />
     <Story />
+    <Events />
     <Roadmaps />
     {/* <Team /> */}
     <style jsx>

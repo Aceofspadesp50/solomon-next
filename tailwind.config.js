@@ -90,8 +90,13 @@ module.exports = {
         'button-image': "url('/assets/images/button_alt.png')",
         'project-image': "url('/assets/images/projects_wallpaper.jpg')",
         'story-image': "url('/assets/images/story_wallpaper.png')",
+        'event-image': "url('/assets/images/event_wallpaper.jpg')",
         'roadmap-image': "url('/assets/images/roadmap_wallpaper.png')",
+        'roadmap-step-image': "url('/assets/images/spirit.png')",
         // 'footer-texture': "url('/img/footer-texture.png')",
+      },
+      boxShadow: {
+        image: '20px 20px 12px 0 rgba(20, 20, 20, 0.9)',
       }
     },
   },
