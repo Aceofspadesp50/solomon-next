@@ -10,11 +10,12 @@ type IVerticalFeatureRowProps = {
   color?: string;
   rotate?: boolean;
   shadow?: string;
+  imageMT?: string;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   const verticalFeatureClass = className(
-    'mt-20',
+    'mt-24',
     'flex',
     'flex-wrap',
     'items-center',
@@ -36,7 +37,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
         <div className="mt-6 text-xl leading-9 whitespace-pre-wrap">{props.description}</div>
       </div>
 
-      <div className="w-full sm:w-1/2 p-6 pt-20">
+      <div className={`w-full sm:w-1/2 p-6 ${props.imageMT? props.imageMT : 'pt-20'}`}>
         {props.rotate ? (
           <div className="transform rotate-project-rotate pb-12">
             <img

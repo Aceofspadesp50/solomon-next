@@ -15,6 +15,8 @@ const Story = () => (
         image="/assets/images/story_left.png"
         imageAlt="First feature alt text"
         reverse
+        color="white"
+        imageMT="pt-0"
       />
     </Section>
   </Background>
